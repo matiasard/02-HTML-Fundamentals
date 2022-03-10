@@ -60,10 +60,37 @@ li {
 
 #main-header {
 	background-color: #f7f7f7;
+	border-bottom: 5px dashed #80df20;
+	padding-bottom: 10px;
 }
 
 aside {
 	background-color: #f7f7f7;
 	border-top: 5px solid #1e98ad;
 	border-bottom: 5px solid #1e98ad;
+}
+li:first-child {
+	font-weight: bold;
+	color: #df2020;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+li:first-letter {
+	font-size: 200%;
+	color: blue;
+}
+
+/* *Se puede seleccionar un elemento espesifico o los elemento pares(even) o impares (odd) */
+li:nth-child(even) {
+	color: rgb(49, 218, 63);
+}
+li:nth-child(3) {
+	color: rgb(210, 25, 216);
+}
+
+article p:last-child {
+	color: rgb(255, 153, 0);
 }
