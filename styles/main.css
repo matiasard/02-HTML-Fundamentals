@@ -94,3 +94,44 @@ li:nth-child(3) {
 article p:last-child {
 	color: rgb(255, 153, 0);
 }
+
+/* ************************ - Styling Links  - ***************************** */
+
+/* *👇Para todos los link que tienen el atributo "href" */
+a:link {
+	color: #1e98ad;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+/* *👇 Para los Link que ya fueron abiertos */
+a:visited {
+	color: #1e98ad;
+}
+
+/* *👇 Cuando pasas el Mouse sobre el Link se activan los estilos */
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline wavy orangered;
+}
+
+/* *👇 Cuando mantienes presionado sobre el Link */
+a:active {
+	background-color: #80df20;
+}
+
+/* * *********** Confict between selecetor (ID, class, selector) ************ */
+
+#copyright {
+	color: red;
+}
+.copyright {
+	color: yellow;
+}
+
+footer p {
+	color: blue;
+}
+
+/* * 👆 Por orden de importancia, se aplicara los estilos del selector ID (#copyright) */
