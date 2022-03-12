@@ -1,9 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
 	font-family: sans-serif;
 	color: #444444;
 }
@@ -13,6 +8,7 @@ h2,
 h3 {
 	color: #1e98ad;
 }
+
 h1 {
 	text-transform: uppercase;
 	font-style: italic;
@@ -101,7 +97,6 @@ article p:last-child {
 a:link {
 	color: #1e98ad;
 	text-decoration: none;
-	font-family: sans-serif;
 }
 
 /* *👇 Para los Link que ya fueron abiertos */
@@ -122,8 +117,7 @@ a:active {
 }
 
 /* * *********** Confict between selecetor (ID, class, selector) ************ */
-
-#copyright {
+/* #copyright {
 	color: red;
 }
 .copyright {
@@ -132,6 +126,5 @@ a:active {
 
 footer p {
 	color: blue;
-}
-
+} */
 /* * 👆 Por orden de importancia, se aplicara los estilos del selector ID (#copyright) */
