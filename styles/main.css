@@ -1,6 +1,39 @@
+/* * Reset de Valores Global */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	border-top: 8px solid #1e98ad;
 	font-family: sans-serif;
 	color: #444444;
+}
+
+#main-header {
+	background-color: #f7f7f7;
+	border-bottom: 5px dashed #80df20;
+	padding: 20px;
+	margin-bottom: 60px;
+}
+
+.post-header {
+	margin-bottom: 40px;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 8px solid #1e98ad;
+	border-bottom: 8px solid #1e98ad;
+	padding: 50px 0;
+}
+
+nav {
+	margin-top: 10px;
+	font-size: 18px;
+}
+article {
+	margin-bottom: 60px;
 }
 
 h1,
@@ -16,10 +49,13 @@ h1 {
 
 h2 {
 	font-size: 40px;
+	margin-bottom: 30px;
 }
 
 h3 {
 	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: 40px;
 }
 
 h4 {
@@ -27,68 +63,26 @@ h4 {
 	text-transform: uppercase;
 	text-align: center;
 }
+
 p {
 	font-size: 22px;
 	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+ul,
+ol {
+	margin-left: 50px;
+	margin-bottom: 20px;
 }
 
 li {
 	font-size: 20px;
-}
-
-#copyright {
-	font-size: 16px;
-}
-
-#author {
-	font-style: italic;
-	font-size: 18px;
-}
-
-.related-author {
-	font-size: 18px;
-	font-weight: bold;
-}
-
-.related {
-	list-style: none;
-}
-
-#main-header {
-	background-color: #f7f7f7;
-	border-bottom: 5px dashed #80df20;
-	padding-bottom: 10px;
-}
-
-aside {
-	background-color: #f7f7f7;
-	border-top: 5px solid #1e98ad;
-	border-bottom: 5px solid #1e98ad;
-}
-li:first-child {
-	font-weight: bold;
-	color: #df2020;
+	margin-bottom: 10px;
 }
 
 li:last-child {
-	font-style: italic;
-}
-
-li:first-letter {
-	font-size: 200%;
-	color: blue;
-}
-
-/* *Se puede seleccionar un elemento espesifico o los elemento pares(even) o impares (odd) */
-li:nth-child(even) {
-	color: rgb(49, 218, 63);
-}
-li:nth-child(3) {
-	color: rgb(210, 25, 216);
-}
-
-article p:last-child {
-	color: rgb(255, 153, 0);
+	margin-bottom: 0;
 }
 
 /* ************************ - Styling Links  - ***************************** */
@@ -115,6 +109,53 @@ a:hover {
 a:active {
 	background-color: #80df20;
 }
+
+/* li:first-child {
+	font-weight: bold;
+	color: #df2020;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+li:first-letter {
+	font-size: 200%;
+	color: blue;
+} */
+
+/* * ******************** FOOTER ******************** */
+#copyright {
+	font-size: 16px;
+}
+
+#author {
+	font-style: italic;
+	font-size: 18px;
+}
+
+/* * ******************** ASIDE ******************** */
+
+.related-author {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.related {
+	list-style: none;
+}
+
+/* *Se puede seleccionar un elemento espesifico o los elemento pares(even) o impares (odd) */
+/* li:nth-child(even) {
+	color: rgb(49, 218, 63);
+}
+li:nth-child(3) {
+	color: rgb(210, 25, 216);
+}
+
+article p:last-child {
+	color: rgb(255, 153, 0);
+} */
 
 /* * *********** Confict between selecetor (ID, class, selector) ************ */
 /* #copyright {
