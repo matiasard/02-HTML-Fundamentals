@@ -10,11 +10,17 @@ body {
 	color: #444444;
 }
 
+.container {
+	width: 700px;
+	margin: 0 auto;
+}
+
 #main-header {
 	background-color: #f7f7f7;
 	border-bottom: 5px dashed #80df20;
 	padding: 20px;
 	margin-bottom: 60px;
+	height: 80px;
 }
 
 .post-header {
@@ -26,6 +32,7 @@ aside {
 	border-top: 8px solid #1e98ad;
 	border-bottom: 8px solid #1e98ad;
 	padding: 50px 0;
+	width: 500px;
 }
 
 nav {
@@ -83,6 +90,11 @@ li {
 
 li:last-child {
 	margin-bottom: 0;
+}
+
+.post-img {
+	width: 100%;
+	height: auto;
 }
 
 /* ************************ - Styling Links  - ***************************** */
