@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
 }
 
@@ -71,6 +71,7 @@ h1 {
 h2 {
 	font-size: 40px;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 h3 {
@@ -114,7 +115,7 @@ li:last-child {
 .btn-like {
 	padding: 15px 25px;
 	font-size: 21px;
-	position: absolute;
+	position: fixed;
 	bottom: 50px;
 	right: 50px;
 }
@@ -124,11 +125,23 @@ h1::first-letter {
 	margin-right: 5px;
 }
 
+/* * Se aplicara los estilos el elemento <p> que este despues de un <h3> */
 h3 + p::first-line {
 	/* color: red; */
 }
 
-h1::after {
+/* * Cartel de "TOP" Articulo mas visto */
+h2::after {
+	content: "TOP";
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	background-color: #ffe70c;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -10px;
+	right: -25px;
 }
 
 /* ************************ - Styling Links  - ***************************** */
